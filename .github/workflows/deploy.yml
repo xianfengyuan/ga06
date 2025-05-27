@@ -8,8 +8,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: sheerdb.do4wvhw.mongodb.net
-      MONGODB_USERNAME: xianyuan
-      MONGODB_PASSWORD: gqac3POvZaHpmcEO
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
